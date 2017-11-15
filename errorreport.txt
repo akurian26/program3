@@ -1,0 +1,9 @@
+P3 error report:
+
+During testing of the two programs I discovered functional errors in both. 
+
+In the IglooScore1 program, I discovered that when the first input (score1) was less than score2 the program summed the three scores and subtracted score2 from the total. This is a functional error because the program is intended to exclude a low score and report the sum of the remaining scores but with the current logic was excluding a non low score. Simply switching which score was removed in each case fixed this error. 
+
+In the IglooScore2 program there were a few errors. Firstly, in the case when score2 was less than both score1 and score3, the resulting action was to sum score1 and score2 and report the result. This case should have excluded score2 since it was the low score. I fixed this by simply changing the action to sum score1 and score3 and report that result instead. I also discovered that in cases where two or more of the scores were equal, the result was incorrect. It would not return the sum of the two highest scores. I added a few additonal cases to handle each situation where there were equal scores. 
+
+Side note: was unable to cover one of the branches in main for IglooScore2. Testing required args to be null. There was no way to pass arguments to make args null so was unable to cover that branch.
