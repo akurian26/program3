@@ -17,4 +17,6 @@ scores were equal, the result was incorrect. It would not return the sum of the 
 highest scores. I added a few additonal cases to handle each situation where there 
 were equal scores. 
 
-Side note: was unable to cover one of the branches in main for IglooScore2. Testing required args to be null. There was no way to pass arguments to make args null so was unable to cover that branch.
+Side note: was unable to cover one of the branches in main for IglooScore2. Testing 
+required args to be null. There was no way to pass arguments to make args null so was 
+unable to cover that branch.
